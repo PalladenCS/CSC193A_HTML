@@ -2,28 +2,26 @@
 <html>
 	<head>
 		<title>Fancify Shamcify</title>
-
-		<!-- link to your script file here -->
-		
+			<script src="fancifymytext.js"></script>
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
 			<fieldset style="border: 4px solid #000; padding: 12px; width: fit-content;">
 				<legend>Text</legend>
-				<textarea rows="4" cols="30"></textarea>
+				<textarea id="textInput" rows="4" cols="30"></textarea>
 			</fieldset>
-			<br>
+
 			<fieldset style="border: 2px solid #000; width: fit-content;">
-			<legend>fancify</legend>
+				<legend>fancify</legend>
+				
+				<button onclick="big()">BIGGER!</button>
+				<button onclick="moo()">Moo</button>
 
-			<button>BIGGER!</button>
-
-			<p>
-				<input type="radio"> fancyScmacy<br>
-				<input type="radio"> BoringBetty
-			</p>
+				<p>
+					<input type="radio" name="style" onchange="fancy(true)"> fancyScmacy<br>
+					<input type="radio" name="style" onchange="fancy(false)"> BoringBetty
+				</p>
 			</fieldset>
-			
 	</body>
 </html>
