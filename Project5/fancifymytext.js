@@ -11,12 +11,14 @@ function moo() {
 
 function fancy(isFancy) {
     if (isFancy){
-        document.getElementById("textInput").style.fontWeight = "bold";
-        document.getElementById("textInput").style.color = "blue";
-        document.getElementById("textInput").style.textDecoration = "underline";
+        var text = document.getElementById("textInput");
+        text.style.fontWeight = "bold";
+        text.style.color = "blue";
+        text.style.textDecoration = "underline";
     } else {
-        document.getElementById("textInput").style.fontWeight = "normal";
-        document.getElementById("textInput").style.color = "black";
-        document.getElementById("textInput").style.textDecoration = "none";
+        var text = document.getElementById("textInput");
+        text.style.fontWeight = "normal";
+        text.style.color = "black";
+        text.style.textDecoration = "none";
     }
 }
